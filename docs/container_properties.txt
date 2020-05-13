@@ -1,0 +1,405 @@
+container.attrs
+
+{
+    "Id": "10d47e5851a67180f04a82bcf8d1926d0828018186d809d02008c5f348af6def",
+    "Created": "2020-05-12T19:11:45.973516582Z",
+    "Path": "bash",
+    "Args": [
+        "-c",
+        "./bin/mailer --config=config/mailer.yml run"
+    ],
+    "State": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 11206,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2020-05-12T19:11:52.168168409Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "Image": "sha256:2e6e308a05c308f895bdbf44fe92edf9d1420455bf94bf1ceead330daa6dda61",
+    "ResolvConfPath": "/var/lib/docker/containers/10d47e5851a67180f04a82bcf8d1926d0828018186d809d02008c5f348af6def/resolv.conf",
+    "HostnamePath": "/var/lib/docker/containers/10d47e5851a67180f04a82bcf8d1926d0828018186d809d02008c5f348af6def/hostname",
+    "HostsPath": "/var/lib/docker/containers/10d47e5851a67180f04a82bcf8d1926d0828018186d809d02008c5f348af6def/hosts",
+    "LogPath": "/var/lib/docker/containers/10d47e5851a67180f04a82bcf8d1926d0828018186d809d02008c5f348af6def/10d47e5851a67180f04a82bcf8d1926d0828018186d809d02008c5f348af6def-json.log",
+    "Name": "/exchange_barong_email.1.74j9sjtkqh8j2qypd1768r6w4",
+    "RestartCount": 0,
+    "Driver": "overlay2",
+    "Platform": "linux",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "docker-default",
+    "ExecIDs": null,
+    "HostConfig": {
+        "Binds": null,
+        "ContainerIDFile": "",
+        "LogConfig": {
+            "Type": "json-file",
+            "Config": {
+                "max-file": "10",
+                "max-size": "10m"
+            }
+        },
+        "NetworkMode": "default",
+        "PortBindings": {},
+        "RestartPolicy": {
+            "Name": "",
+            "MaximumRetryCount": 0
+        },
+        "AutoRemove": false,
+        "VolumeDriver": "",
+        "VolumesFrom": null,
+        "CapAdd": null,
+        "CapDrop": null,
+        "Capabilities": null,
+        "Dns": null,
+        "DnsOptions": null,
+        "DnsSearch": null,
+        "ExtraHosts": null,
+        "GroupAdd": null,
+        "IpcMode": "private",
+        "Cgroup": "",
+        "Links": null,
+        "OomScoreAdj": 0,
+        "PidMode": "",
+        "Privileged": false,
+        "PublishAllPorts": false,
+        "ReadonlyRootfs": false,
+        "SecurityOpt": null,
+        "UTSMode": "",
+        "UsernsMode": "",
+        "ShmSize": 67108864,
+        "Runtime": "runc",
+        "ConsoleSize": [
+            0,
+            0
+        ],
+        "Isolation": "default",
+        "CpuShares": 0,
+        "Memory": 0,
+        "NanoCpus": 0,
+        "CgroupParent": "",
+        "BlkioWeight": 0,
+        "BlkioWeightDevice": null,
+        "BlkioDeviceReadBps": null,
+        "BlkioDeviceWriteBps": null,
+        "BlkioDeviceReadIOps": null,
+        "BlkioDeviceWriteIOps": null,
+        "CpuPeriod": 0,
+        "CpuQuota": 0,
+        "CpuRealtimePeriod": 0,
+        "CpuRealtimeRuntime": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "Devices": null,
+        "DeviceCgroupRules": null,
+        "DeviceRequests": null,
+        "KernelMemory": 0,
+        "KernelMemoryTCP": 0,
+        "MemoryReservation": 0,
+        "MemorySwap": 0,
+        "MemorySwappiness": null,
+        "OomKillDisable": false,
+        "PidsLimit": null,
+        "Ulimits": null,
+        "CpuCount": 0,
+        "CpuPercent": 0,
+        "IOMaximumIOps": 0,
+        "IOMaximumBandwidth": 0,
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/secrets",
+                "Target": "/secrets",
+                "ReadOnly": true
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/barong/views",
+                "Target": "/home/app/app/views"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/barong/logo.png",
+                "Target": "/home/app/public/logo.png"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/barong/mailer.yml",
+                "Target": "/home/app/config/mailer.yml"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/barong/seeds.yml",
+                "Target": "/home/app/config/seeds.yml"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/barong/barong.yml",
+                "Target": "/home/app/config/barong.yml"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/barong/authz_rules.yml",
+                "Target": "/home/app/config/authz_rules.yml"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/barong/management_api.yml",
+                "Target": "/home/app/config/management_api.yml"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/app/opendax/config/barong/cloudflare_ips.yml",
+                "Target": "/home/app/config/cloudflare_ips.yml"
+            }
+        ],
+        "MaskedPaths": [
+            "/proc/asound",
+            "/proc/acpi",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/sys/firmware"
+        ],
+        "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+        ]
+    },
+    "GraphDriver": {
+        "Data": {
+            "LowerDir": "/var/lib/docker/overlay2/eec3ae6a8d007c6f432f3af7b09c9b9e7f2dff604976761b899399c67cdd6a26-init/diff:/var/lib/docker/overlay2/a644078a65aa3274f52c363a3111e7bf8f5f5521858e32839d497f1c8147bd34/diff:/var/lib/docker/overlay2/e1cf87e90854da8d487b29b83e8c0345f50fe86b6e24c3edb60efe09ec59bf06/diff:/var/lib/docker/overlay2/7069c0d451a1d5dc5f1abf0c94b7f73162b3494b8e15ef382a847a44d26125b2/diff:/var/lib/docker/overlay2/7b309a294878d58e9adc23d7cd96368bf56645c8737e4abb8ce43c8bc17e6f74/diff:/var/lib/docker/overlay2/5c4cda459a81877af8a0c0b497fbcb63742393534218311012388bd1bd549a70/diff:/var/lib/docker/overlay2/dc120583a4ae32de32448bf403b4a6963a0640e8732e74938a4b8d5f73acd176/diff:/var/lib/docker/overlay2/097354508f890899d944c5629a99fc34559a8ccfeaa39b13dbece29f66eedaa2/diff:/var/lib/docker/overlay2/35c70fcf2d9214b5399a4f618c7c65adf528136e1821b4fb8aec9c476b77a13d/diff:/var/lib/docker/overlay2/ab88edf1cd609b41cf4e616f992c73070b6a9ab073368b0ad196d4c372c858b0/diff:/var/lib/docker/overlay2/76681ad52404349037561373375156c4c5d065c4d9c57bdce17db9c724f4897a/diff:/var/lib/docker/overlay2/2d1f594bd203b581b8b94f98b7ea4f260f5d88652f410cdca8812222f7968275/diff:/var/lib/docker/overlay2/2370d79151f5a45a36013ac972b3398955b30080aed4adfd5b9aeaf68821231d/diff:/var/lib/docker/overlay2/dfde1db9f409dbd1a581b1750ed34d7b0a51bf5e6562529994fa6fe9cf47afa1/diff:/var/lib/docker/overlay2/e57cb3f4617694dba1000e0ffeffeefbd435e94bcd370e3a83d9307ccd2f6d08/diff:/var/lib/docker/overlay2/79e250b97ef81975e55f4784dc3ea09cfdb54e00afae2366ff191b80929605cc/diff:/var/lib/docker/overlay2/66bee835028a6fd10bd25ec69733f9c131640ffd28f0e47cafff256234961da8/diff",
+            "MergedDir": "/var/lib/docker/overlay2/eec3ae6a8d007c6f432f3af7b09c9b9e7f2dff604976761b899399c67cdd6a26/merged",
+            "UpperDir": "/var/lib/docker/overlay2/eec3ae6a8d007c6f432f3af7b09c9b9e7f2dff604976761b899399c67cdd6a26/diff",
+            "WorkDir": "/var/lib/docker/overlay2/eec3ae6a8d007c6f432f3af7b09c9b9e7f2dff604976761b899399c67cdd6a26/work"
+        },
+        "Name": "overlay2"
+    },
+    "Mounts": [
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/barong/authz_rules.yml",
+            "Destination": "/home/app/config/authz_rules.yml",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+        },
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/barong/cloudflare_ips.yml",
+            "Destination": "/home/app/config/cloudflare_ips.yml",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+        },
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/secrets",
+            "Destination": "/secrets",
+            "Mode": "",
+            "RW": false,
+            "Propagation": "rprivate"
+        },
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/barong/logo.png",
+            "Destination": "/home/app/public/logo.png",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+        },
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/barong/mailer.yml",
+            "Destination": "/home/app/config/mailer.yml",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+        },
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/barong/barong.yml",
+            "Destination": "/home/app/config/barong.yml",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+        },
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/barong/views",
+            "Destination": "/home/app/app/views",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+        },
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/barong/seeds.yml",
+            "Destination": "/home/app/config/seeds.yml",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+        },
+        {
+            "Type": "bind",
+            "Source": "/home/app/opendax/config/barong/management_api.yml",
+            "Destination": "/home/app/config/management_api.yml",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+        }
+    ],
+    "Config": {
+        "Hostname": "10d47e5851a6",
+        "Domainname": "",
+        "User": "app",
+        "AttachStdin": false,
+        "AttachStdout": false,
+        "AttachStderr": false,
+        "ExposedPorts": {
+            "8080/tcp": {}
+        },
+        "Tty": false,
+        "OpenStdin": false,
+        "StdinOnce": false,
+        "Env": [
+            "APIKEY_NONCE_LIFETIME=5000",
+            "BARONG_APP_NAME=Bitcoinsfacil",
+            "BARONG_CSRF_PROTECTION=false",
+            "BARONG_DOMAIN=http://www.blockchainsfacil.com",
+            "BARONG_EVENT_API_RABBITMQ_HOST=rabbitmq",
+            "BARONG_EVENT_API_RABBITMQ_PASSWORD=guest",
+            "BARONG_EVENT_API_RABBITMQ_PORT=5672",
+            "BARONG_EVENT_API_RABBITMQ_USERNAME=guest",
+            "BARONG_PHONE_VERIFICATION=twilio_sms",
+            "BARONG_REDIS_URL=redis://redis:6379",
+            "BARONG_SESSION_EXPIRE_TIME=6000",
+            "BARONG_SESSION_NAME=_blockchainsfacil_auth_session",
+            "BARONG_SMTP_HOST=smtp.sendgrid.net",
+            "BARONG_SMTP_PASSWORD=xZqUEw4DQj4UWueEV71eIqk3nFElEEOOMDOKoiu2",
+            "BARONG_SMTP_PORT=2525",
+            "BARONG_SMTP_USER=sundanny26",
+            "BARONG_STORAGE_ACCESS_KEY=changeme",
+            "BARONG_STORAGE_BUCKET_NAME=opendax-barong-docs-bucket",
+            "BARONG_STORAGE_ENDPOINT=https://fra1.digitaloceanspaces.com",
+            "BARONG_STORAGE_PROVIDER=Google",
+            "BARONG_STORAGE_REGION=fra1",
+            "BARONG_STORAGE_SECRET_KEY=changeme",
+            "BARONG_STORAGE_SIGNATURE_VERSION=2",
+            "BARONG_TWILIO_ACCOUNT_SID=changeme",
+            "BARONG_TWILIO_AUTH_TOKEN=changeme",
+            "BARONG_TWILIO_PHONE_NUMBER=+15005550000",
+            "BARONG_VAULT_ADDRESS=http://vault:8200",
+            "BARONG_VAULT_TOKEN=changeme",
+            "DATABASE_HOST=db",
+            "DATABASE_PASS=changeme",
+            "DATABASE_PORT=3306",
+            "DATABASE_USER=root",
+            "DEFAULT_LANGUAGE=es",
+            "DISABLE_SPRING=true",
+            "EVENT_API_JWT_ALGORITHM=RS256",
+            "EVENT_API_JWT_PRIVATE_KEY=LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBK1AxaWhnbmVKeE5LVXE0d1l4T1RWWTdsanZYUFh5ZGhvWTJjb29aSGcyeHEwL3o0CjZZRWQ0R0ZxeUl0L0M3dytFWEtrNHR3d1RDZ1huNjlSOXZ4WldhTHJNZkRMQzNXbGc3YkRIUURMbk91VG0yRXYKL3Z3WVg5bVlYM1dEelJnKzdlY2VoNFhxKzZ2dmF1c0s4Y0ppUzlvMVNiN2puSlNHSjN0emEyTWZlWlduTEM2LwpBRjBkV2loM014ZFo5bmdEMThmd1Y0bmFKcFJnRGRRVXpTZVdha2JkSWtrcE90T2x4ZzVlZ0kxRCtwSlQreEg2ClZQS0xkQVlNTXFFbUY3empOY3hweWZncVk3MHRIczZqeC9jdXI2amdBckhRQzdIcEtMMm9yOGFVeXNtOFg2UkUKb3BzbmR3OStPMjRpRUxZcllJWGV3MHg2Mlk5cXRodUliS0Y0MlFJREFRQUJBb0lCQVFDOVM5NjRxdzNqUlU0dgpGOUVmc2dWRWVkUmE0TlRjc2RNUEFOdkIwRGJVV3Z2STJUM2dRTktYQVZrdXlLYzVJODlJY3BHYkMrNElLRDcxCm4xUEFZOUFHVHM5aTgzOWE0Z0dJNXN6bDR2SHFCa3Y5U0dFMkNURDZ4aktLK0l2UXhJc3JVWmdyVG92ODlKV2MKQXNBYVZ6OW1EYXFQdTNuT1ZEaStFYVFKVTUzZFQ0S1JXWk9lK3dqeEk5NW10SURjRENZTnJnR0ZjbjFycklKMQpxaHllWVpqZW52M1I3R3puOWZJemtndWxyNFliZTZSSG5GdmNYZDFnUm1pOFNZR3JKQ3M0TUVXU25Udko5WjZmCnhQVHUvSXdyQk0yYmNheHI0VTgraEpDajd6UWFMVUwyU3FjWG1ZeEJRYUU1Q0xZWW5jQVJUVGNMOGQzaGhzT0cKR1dHZnhYVWxBb0dCQVAvV0tCQWRTS1lRZTVITVFEQ0tLMmpCQ3VDc3VDb1pFSTRMSzdZNWFpYSsyUlY4WHFadgptY2FJYTlHb25vQnJtV2xYUGhOV21mU0FxR3RSM3lUVHVIUXJVaWV0NFhsRUpCWHl0RmQ0U01hZ3pZbG1naHZECkFmWDB5UHNYL29zclVEaDMvM09uK25pRXZza2RkcW1zYlpGd1FoNiswMDhFMTlyZW9hOWZuZkJiQW9HQkFQa20KRzhqMW5VcDFQeGJvaTFFd0xmNUNCcFd2SCtvSGFVN0R6VU9MTElJQmlDZndnZzU5RFdyWTdlSFZEZlVwR1FKMgpwcnl0czZHQ0xBUVpYenpibXFRTmhFaWV3UEVvT1B0R3N2YnB3d09lS21JS2RNK1FVOXgrYzg1di9RKzI4c0FaClAzVVZ1MzB1V1JtNXdzeldneFFOZmtFbVNyN0x0NVVKY3M5cjVZSGJBb0dCQUk5WC9ycUlyZHZlQUY2QWdyYXYKdEFMTnBycWNDOVFLbHl2L05rNnpmTGFZMkNraHRpYXJBUTRzQWIxSExRZm5RZDJ6OUNRQnNlRTg5U0NzanNxagpsZ1lBLzljYnBlbThORHZYOFJQUllYVnBROEJvbngzTzlacEp2Ukp6THp2cTJOZks1R1o1QiszZThzYmNxMUFHClBKM3d1QnRoOENPbUl3dVBFaWlnK20xaEFvR0FBaEIxeEhsOGZ5UnZqR0lLM1haWHV6YVMxV1NwRUFoVnNBaGgKU0FEOE1tdU8xRDNpNWZuVlJhQmNnRFdDc3hoUEU3MGw3b1JGNjcyblhiVlVHNjM2SHdmWm83eGsvdHFGZGxlRQpuaFVidjRqczh2a0JOTU1PWHRKUlpWRjZPRW9jd3NpeXhPYVVNaHBUTktwY1dkUWhLK1pjdUc5M3lSTHBCM3dYCmptNW5iV2NDZ1lBQ2FZTjFYV3NhYmQ4WWpIRnZjeDBvRlI2blh0QlYvSG16empBRm5oL3ZxV2xMbUk5Q1NLVWcKanRGajNHOVpEWEJOdTVTd0cwbXpib0lXSEM5bi91d2Z1U0NNMTdBR0JFMndQekhWVzlmRjE4dy9OMFJ1UlpEQwo4ajBhNUwvaTJkVHFGUHVyS2FSdG9CeTA3cmRJMmNIaHZ1aHV5b1M3OFJGMmY2MDdXNGJ4K0E9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=",
+            "EVENT_API_RABBITMQ_HOST=rabbitmq",
+            "EVENT_API_RABBITMQ_PASSWORD=guest",
+            "EVENT_API_RABBITMQ_PORT=5672",
+            "EVENT_API_RABBITMQ_USERNAME=guest",
+            "JWT_PRIVATE_KEY_PATH=/secrets/barong.key",
+            "JWT_PUBLIC_KEY=LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUErUDFpaGduZUp4TktVcTR3WXhPVApWWTdsanZYUFh5ZGhvWTJjb29aSGcyeHEwL3o0NllFZDRHRnF5SXQvQzd3K0VYS2s0dHd3VENnWG42OVI5dnhaCldhTHJNZkRMQzNXbGc3YkRIUURMbk91VG0yRXYvdndZWDltWVgzV0R6UmcrN2VjZWg0WHErNnZ2YXVzSzhjSmkKUzlvMVNiN2puSlNHSjN0emEyTWZlWlduTEM2L0FGMGRXaWgzTXhkWjluZ0QxOGZ3VjRuYUpwUmdEZFFVelNlVwpha2JkSWtrcE90T2x4ZzVlZ0kxRCtwSlQreEg2VlBLTGRBWU1NcUVtRjd6ak5jeHB5ZmdxWTcwdEhzNmp4L2N1CnI2amdBckhRQzdIcEtMMm9yOGFVeXNtOFg2UkVvcHNuZHc5K08yNGlFTFlyWUlYZXcweDYyWTlxdGh1SWJLRjQKMlFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==",
+            "LOG_LEVEL=debug",
+            "PORT=8001",
+            "RAILS_ENV=production",
+            "RECAPTCHA_SECRET_KEY=changeme",
+            "RECAPTCHA_SITE_KEY=changeme",
+            "SECRET_KEY_BASE=64",
+            "SMTP_HOST=smtp.sendgrid.net",
+            "SMTP_PASSWORD=xZqUEw4DQj4UWueEV71eIqk3nFElEEOOMDOKoiu2",
+            "SMTP_PORT=2525",
+            "SMTP_USER=sundanny26",
+            "PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "RUBY_MAJOR=2.6",
+            "RUBY_VERSION=2.6.5",
+            "RUBY_DOWNLOAD_SHA256=d5d6da717fd48524596f9b78ac5a2eeb9691753da5c06923a6c31190abe01a62",
+            "GEM_HOME=/usr/local/bundle",
+            "BUNDLE_SILENCE_ROOT_WARNING=1",
+            "BUNDLE_APP_CONFIG=/usr/local/bundle",
+            "MAXMINDDB_LINK=https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&suffix=tar.gz&license_key=T6ElPBlyOOuCyjzw",
+            "APP_HOME=/home/app",
+            "TZ=UTC",
+            "BARONG_MAXMINDDB_PATH=/home/app/geolite/GeoLite2-Country.mmdb"
+        ],
+        "Cmd": [
+            "bash",
+            "-c",
+            "./bin/mailer --config=config/mailer.yml run"
+        ],
+        "Image": "bitcoinsfacildoc/barong:2.4.1_custom.01",
+        "Volumes": null,
+        "WorkingDir": "/home/app",
+        "Entrypoint": null,
+        "OnBuild": null,
+        "Labels": {
+            "com.docker.stack.namespace": "exchange",
+            "com.docker.swarm.node.id": "5pep8e3l2hm60gvdw3vt9s6a1",
+            "com.docker.swarm.service.id": "slp4m6y44i1x6bppjaby78o29",
+            "com.docker.swarm.service.name": "exchange_barong_email",
+            "com.docker.swarm.task": "",
+            "com.docker.swarm.task.id": "74j9sjtkqh8j2qypd1768r6w4",
+            "com.docker.swarm.task.name": "exchange_barong_email.1.74j9sjtkqh8j2qypd1768r6w4"
+        }
+    },
+    "NetworkSettings": {
+        "Bridge": "",
+        "SandboxID": "5060515094ab648912c0ffd9660085c30393a7a9a8e05becfd7b5ca02a37d2fc",
+        "HairpinMode": false,
+        "LinkLocalIPv6Address": "",
+        "LinkLocalIPv6PrefixLen": 0,
+        "Ports": {
+            "8080/tcp": null
+        },
+        "SandboxKey": "/var/run/docker/netns/5060515094ab",
+        "SecondaryIPAddresses": null,
+        "SecondaryIPv6Addresses": null,
+        "EndpointID": "",
+        "Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "IPAddress": "",
+        "IPPrefixLen": 0,
+        "IPv6Gateway": "",
+        "MacAddress": "",
+        "Networks": {
+            "exchange_default": {
+                "IPAMConfig": {
+                    "IPv4Address": "10.0.1.248"
+                },
+                "Links": null,
+                "Aliases": [
+                    "10d47e5851a6"
+                ],
+                "NetworkID": "8289a1ontglkq3s1x3k7ahruh",
+                "EndpointID": "3dd9924c6fe66793f74f3a958c73db08a71c1735a779208dc3e5a8e0399212ca",
+                "Gateway": "",
+                "IPAddress": "10.0.1.248",
+                "IPPrefixLen": 24,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "MacAddress": "02:42:0a:00:01:f8",
+                "DriverOpts": null
+            }
+        }
+    }
+}
+

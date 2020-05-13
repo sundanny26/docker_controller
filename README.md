@@ -1,4 +1,5 @@
 # docker_controller
+It resets barong_email containers every 20 minutes so the service keeps up and fresh
 
 ## Build Image
 	docker build -t email_c_image .
